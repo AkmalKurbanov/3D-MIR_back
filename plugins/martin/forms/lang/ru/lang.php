@@ -8,7 +8,7 @@
         ],
 
         'menu' => [
-            'label'    => 'Magic Forms',
+            'label'    => 'Заявки',
             'records'  => ['label' => 'Записи'],
             'exports'  => ['label' => 'Экспорт'],
             'settings' => 'Настройки плагина',

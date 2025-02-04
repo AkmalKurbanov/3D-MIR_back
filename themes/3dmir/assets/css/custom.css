@@ -59,10 +59,22 @@
 }
 
 .pagination .page-item.active a {
-  background-color: #c59358;
-  border-color: #c59358;
+    background-color: #c59358;
+    border-color: #c59358;
 }
 
-.pagination .page-link{
-  color: black;
+.pagination .page-link {
+    color: black;
+}
+#map{
+  overflow: hidden;
+  outline: none;
+}
+#map iframe{
+    width: calc(100% + 4px);
+    height: 380px;
+    margin-top: -67px;
+    
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }

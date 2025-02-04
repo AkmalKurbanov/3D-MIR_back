@@ -8,7 +8,7 @@
         ],
 
         'menu' => [
-            'label'    => 'Magic Forms',
+            'label'    => 'Magic Forms1',
             'records'  => ['label' => 'Records'],
             'exports'  => ['label' => 'Export'],
             'settings' => 'Configure plugin parameters',

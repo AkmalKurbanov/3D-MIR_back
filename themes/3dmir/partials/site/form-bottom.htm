@@ -36,22 +36,30 @@
             </div>
 
             {% if this.page.fileName == 'category.htm' %}
-							<input type="hidden" name="Услуги" value="{{categoryDetail.name}}">
-							<input type="hidden" name="Ссылка" value="{{ this.page.baseFileName|app }}/{{categoryDetail.slug}}">
-						
-						{% elseif this.page.fileName == 'project-detail.htm' %}
-							<input type="hidden" name="Проекты" value="{{recordDetail.name}}">
-							<input type="hidden" name="Ссылка" value="{{ this.page.baseFileName|app }}/{{recordDetail.slug}}">
 
-						{% elseif this.page.fileName == 'service-detail.htm' %}
-							<input type="hidden" name="Услуги" value="{{recordDetail.name}}">
-							<input type="hidden" name="Категория" value="{{recordDetail.category.name}}">
-							<input type="hidden" name="Ссылка" value="{{ this.page.baseFileName|app }}/{{recordDetail.slug}}">
-						
-            {% elseif this.page.fileName == 'price.htm' %}
-							<input type="hidden" name="Вопрос" value="Консультация по ценам">
-						
-						{% else %}
+              {% elseif this.page.fileName == 'project-detail.htm' %}
+                <input type="hidden" name="Проекты" value="{{recordDetail.name}}">
+                <input type="hidden" name="Категория" value="{{recordDetail.category.name}}">
+                <input type="hidden" name="Ссылка" value="{{ this.page.baseFileName|app }}/{{recordDetail.slug}}">
+
+              {% elseif this.page.fileName == 'service-detail.htm' %}
+                <input type="hidden" name="Услуги" value="{{recordDetail.name}}">
+                <input type="hidden" name="Категория" value="{{recordDetail.category.name}}">
+                <input type="hidden" name="Ссылка" value="{{ this.page.baseFileName|app }}/{{recordDetail.slug}}">
+              
+              {% elseif this.page.fileName == 'post.htm' %}
+                <input type="hidden" name="Блог" value="{{recordDetail.name}}">
+                <input type="hidden" name="Категория" value="{{recordDetail.category.name}}">
+                <input type="hidden" name="Ссылка" value="{{ this.page.baseFileName|app }}/{{recordDetail.slug}}">
+              
+              {% elseif this.page.fileName == 'price.htm' %}
+                <input type="hidden" name="Вопрос" value="Консультация по ценам">
+
+              
+              {% else %}
+                <input type="hidden" name="Страница" value="{{ this.page.baseFileName|app }}">
+                
+							
 					{% endif %}
             
           </form>

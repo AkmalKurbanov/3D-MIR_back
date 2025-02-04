@@ -6,7 +6,7 @@
             'description' => 'Crie formulários fácilmente com AJAX'
         ],
         'menu' => [
-            'label'    => 'Formulários Mágico',
+            'label'    => 'Formulários Mágico1',
             'records'  => ['label' => 'Registros'],
             'exports'  => ['label' => 'Exportar'],
             'settings' => 'Configurar parâmetros do plug-in',

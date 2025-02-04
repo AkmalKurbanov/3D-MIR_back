@@ -5,7 +5,7 @@
             'description' => 'Créer des formulaires AJAX facilement'
         ],
         'menu' => [
-            'label'    => 'Magic Forms',
+            'label'    => 'Magic Forms1',
             'records'  => ['label' => 'Enregistrements'],
             'exports'  => ['label' => 'Export'],
             'settings' => 'Configurer kes parameters du plugin',
